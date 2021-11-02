@@ -1,3 +1,4 @@
+#Collaborated with Alex Prior and Ibrahim Chand
 # qlearningAgents.py
 # ------------------
 # Licensing Information:  You are free to use or extend these projects for
@@ -76,7 +77,6 @@ class QLearningAgent(ReinforcementAgent):
             return 0.0
         else:
             for action in legalActions:
-                # print("helloooooooooooooooooooooooooooooooooooooo")
                 qVal = self.getQValue(state, action)
                 if qVal > maxReward:
                     maxReward = qVal
